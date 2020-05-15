@@ -1,0 +1,190 @@
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -20vh;
+    background: #fff;
+    padding: 0px 10%;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+header {
+    background: url("img/gentoo-penguins.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.oilDrill {
+    background: url("img/oil-drilling.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.polarBear {
+    background: url("img/polar_bears_infographic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.summer {
+    background: url("img/teenageronice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header nav {
+    background-color: #384C5F;
+    opacity: 80%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    font-family: 'Helvetica', sans-serif;
+    display: block;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px 10px 16px;
+    text-decoration: none;
+    height: 100%;
+}
+
+header nav ul li a:hover {
+    background-color: #66cc00;
+}
+
+header nav ul li:first-child a:hover {
+    background-color: transparent;
+}
+
+main > h1 {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0px 2px 0px #6c0;
+}
+
+main > p {
+    text-indent: 50px;
+    margin-bottom: 25px;
+}
+
+main > ul {
+    list-style: none;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+main > ul > li::before {
+    content: "\2022";
+    color: #6c0;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+main > ul > li {
+    margin: 10px 0px;
+}
+
+main > .credits > ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+main > .credits > ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+}
+
+main > .credits > ul.breadcrumb li + li:before {
+    padding: 2px;
+    color: #66CC00;
+    content: "/\00a0";
+}
+
+main > .credits > ul.breadcrumb li a {
+    color: #66cc00;
+    text-decoration: underline;
+}
+
+main > .credits > ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+}
+
+p > a {
+    color: #6c0;
+    font-weight: bold;
+}
+
+main > p > span,
+main > ul > li > span {
+    color: #6c0;
+    font-weight: bold;
+}
+
+main > p > i,
+main > ul > li > i {
+    color: #6c0;
+}
+
+main > a > img {
+    width: 60px;
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+
+main > .infographic {
+    margin-left: 8rem;
+}
+
+.footer > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 15px;
+    margin-top: 150px;
+}
+
+.footer > ul > li > a > img {
+    height: 22px;
+    width: 50px;
+}
+
+.footer > h5 {
+    color: #6c0;
+    float: right;
+    transform: translateY(-150%);
+}
+
+.credits {
+    color: #6c0;
+}
+
+.credits span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.credits p {
+    margin: 25px 100px;
+}

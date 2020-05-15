@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+body{
+	height: 100vh;
+	background: #CDCFD0;
+    background-image: url("img/bgstatic-01.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+header{
+	height: 25%;
+	/*background: red;*/
+}
+main{
+	height: 75%;
+	/*background: blue;*/
+}
+.hdcontainer img{
+	width: 40%;
+	-webkit-animation: bloat .7s ease-in-out infinite;
+    animation: bloat 2s ease-in-out infinite;
+}
+.center{
+	text-align: center;
+	align-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.hdcontainer{
+	padding-top: 6%;
+}
+
+.grid-box{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 25%;
+}
+#hugo{
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+    -webkit-animation: jump .7s infinite steps(5);
+    animation: jump .7s ease-in-out infinite steps(5);
+    position: absolute;
+    height: 200px;
+	width: 200px;
+	bottom: 3%;
+	overflow: hidden;
+	transition: 0.2s ease-in-out;
+}
+/*.obs{
+	background: hotpink;
+	background-size: auto 100%;
+	position: absolute;
+	width: 200px;
+	bottom: 27.5%;
+	transition: 2s ease-in-out;
+}*/
+#left-lane {
+    height: 75vh;
+    /*background: red;*/
+}
+
+#middle-lane {
+
+    height: 75vh;
+    /*background: yellow;*/
+
+}
+
+#right-lane {
+    height: 75vh;
+    /*background: blue;*/
+}
+.oil{
+	animation: 5s linear;
+	width: 100px;
+}
+.oil_barrel{
+	position: absolute;
+	bottom: 27.5%;
+	/*background: hotpink;*/
+}
+.active{
+	animation: big 2s ease-in;
+}
+.nu{
+	display: none;
+}
+.hugosus{
+    order: 100;
+    z-index: 100;
+}
+
+/*div[obstacle]{
+	animation: 2s linear;
+	transition: 2s linear;
+	bottom: 3%;
+}
+div[obstacle] img{
+	transition: 2s linear;
+	animation: 2s linear;
+	transform: scale(2);
+}*/
+
+@-webkit-keyframes jump {
+
+    to {
+        background-position-x: -1000%;
+
+    }
+}
+
+@keyframes jump {
+
+    to {
+        background-position-x: -1000%;
+
+    }
+}
+@keyframes run {
+
+    to {
+        background-position-x: -800%;
+
+    }
+}
+@keyframes big {
+
+    90% {
+        transform: scale(2);
+		bottom: 3%;
+		opacity: 1;
+    }
+    /*95%{
+    	transform: scale(2.2);
+    	bottom: 1%;
+
+    }*/
+    100%{
+    	opacity: 0;
+    	/*display: none;*/
+    }
+}
+@-webkit-keyframes bloat {
+
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+
+    }
+}
+
+
+
+
+@keyframes bloat {
+
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+
+    }
+}

@@ -1,0 +1,464 @@
+* {
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.center{
+	text-align: center;
+	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo{
+	margin-top: 25px;
+	height: 6.5vh;
+	max-width: 90vw;
+}
+header{
+	min-height: 100vh;
+	background: url("img/icemelt.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+header h1{
+	font-size: 6.5vh;
+	color: white;
+	margin: 7.5% 0 2.5% 10%;
+}
+header h5{
+	text-decoration: underline;
+	text-decoration-color: #66CC00;
+	font-size: 4vh;
+	font-weight: 600;
+	color: white;
+	margin-left: 10%;
+	margin-right: 20px;
+	display: inline-block;
+}
+header > div > a > img {
+	height: 5vh;
+	transform: translateY(40%);
+	background: white;
+	padding: 8px 20px;
+	border-radius: 30px;
+}
+
+header > .floating-arrow {
+    background-image: url(img/arrow-down-01.svg);
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    bottom: 2rem;
+    left: calc(50vw - 25px);
+    z-index: 10;
+    cursor: pointer;
+}
+
+header > .floating-arrow {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+body{
+	background: #ADC0CF;
+}
+#video{
+	display: grid;
+	grid-template-columns: 50px 3fr 60px 4fr 50px;
+	color: white;
+}
+
+.startCampaign {
+	background: #6c0;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	margin-top: -100px;
+	padding: 50px;
+	margin-bottom: 100px;
+}
+.startCampaign span{
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.startCampaign > p{
+	margin-left: 30px; 
+}
+.startCampaign > h6 {
+	margin-bottom: 80px;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+.startCampaign button{
+	display: block;
+	background: white;
+	border-radius: 20px;
+	padding: 10px;
+}
+.startCampaign button h6{
+	font-size: 1.8em;
+}
+
+.startCampaign .form {
+	margin-top: 50px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form .group {
+	margin-bottom: 32px;
+}
+
+.form .group label {
+	display: block;
+	margin-bottom: 8px;
+	padding-left: 16px;
+}
+
+.form .group input[type=text],
+.form .group input[type=email] {
+	width: 100%;
+	padding: 16px;
+	font-size: 16px;
+}
+
+.form > label > input[type=checkbox] {
+	margin-left: 16px;
+	margin-right: 4px;
+}
+
+.form > label {
+	display: block;
+	margin-bottom: 64px;
+}
+
+.startCampaign .form button {
+	display: flex;
+	align-items: center;
+	padding: 8px 32px;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 16px;
+	border: 2px solid #666;
+}
+
+.icon-plus {
+	display: inline-block;
+	background: url(img/plus-icon.svg) no-repeat;
+	background-size: 32px;
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+}
+
+.where{
+	margin-bottom: 0px;
+}
+.video{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	margin-top: 50px; 
+	margin-bottom: 175px
+}
+.video video{
+	width: 100%;
+	/*height: 100%;*/
+}
+#learnMore{
+	width: 98%;
+	margin-left: 1%;
+	background: #fff;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 60%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.container{
+	width: 40%;
+	margin-left: 30%;
+}
+#learnMore{
+	background: #fff;
+}
+#learnMore > h1{
+	color:#304656;
+	font-size: 4em;
+	padding-left: 75px;
+	padding-top: 50px;
+	padding-bottom: 75px;
+}
+.containerFlex {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 150px;
+}
+.article {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	width: 40%;
+	position: relative;
+	margin: 50px 0px;
+}
+.article .article-image {
+	width: 200px;
+    height: 150px;
+	padding-right: 16px;
+	flex-shrink: 0;
+}
+
+.article .article-image img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+b{
+	font-weight: 900;
+	margin-right: 25px;
+}
+.article .article-text h6 {
+	color: #3B6481;
+	font-weight: normal;
+	font-size: 12px;
+}
+.article .article-text h5 {
+	font-weight: 900;
+	margin: 8px 0;
+	font-size: 16px;
+}
+
+.article .article-text .byline {
+	margin: 8px 0;
+}
+
+.byline {
+	font-size: 14.5px;
+	font-weight: lighter;
+	color: #777;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+.learnFooter{
+	background: #fff;
+	width: 100%;
+}
+.learnFooter > h2 {
+	color: white;
+	background: #66CC00;
+	float: right;
+	transform: translateY(-100%);
+	padding: 30px 100px;
+	text-transform: uppercase;
+	font-size: 32px;
+}
+
+#memes{
+	background: #3B6481;
+	width: 98%;
+    margin-left: 1%;
+}
+
+.memeFlex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#game{
+	width: 98%;
+	margin-left: 1%;
+	background: #D1D1D1;
+}
+
+#game img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+footer{
+	width: 98%;
+	margin-left: 1%;
+	background: #fff;
+	padding-bottom: 32px;
+	margin-bottom: 32px;
+}
+footer > img {
+	width: 35%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 16px 50px;
+}
+.footerLogo{
+	width: 30%;
+	padding-top: 200px;
+	margin-left: 35%;
+}
+footer ul {
+	list-style: none;
+}
+footer > div > ul > li > img{
+	width: 50px;
+	margin: 15px;
+}
+
+.footer-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.footer-col:last-child {
+	margin-right: 50px;
+}
+
+.footer-col:last-child > h3 {
+	text-align: right;
+	color: #66CC00;
+	margin-bottom: 150px;
+}
+
+.footer-col:last-child > h2{
+	text-align: right;
+	margin-right: 100px;
+}
+
+.footerRight > p {
+	text-align: right;
+	margin-bottom: 100px;
+}
+footer ul > li {
+	margin: 50px;
+}
+footer ul > li > h3{
+	font-size: 1.5em;
+	margin-left: 15px;
+}
+
+.some-row {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 16px;
+	margin-left: 90px;
+}
+
+.some-row a {
+	display: block;
+	margin-right: 22px;
+}
+
+.some-row a:nth-child(2) {
+	margin-right: 6px;
+}
+
+.some-row a:last-child {
+	margin-right: 0;
+}
